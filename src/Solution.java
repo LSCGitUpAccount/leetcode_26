@@ -1,7 +1,10 @@
 public class Solution {
     public int removeDuplicates(int[] nums) {
         // 1. 判断数组的有效性
-        if (nums == null || nums.length < 2) {
+        if (nums == null) {
+            return 0;
+        }
+        if (nums.length < 2) {
             return nums.length;
         }
 
